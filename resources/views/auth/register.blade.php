@@ -38,26 +38,6 @@
                             </div>
                         </div>
 
-                        <div class="form-group{{ $errors->has('jabatan') ? ' has-error' : '' }}">
-                            <label for="jabatan" class="col-md-4 control-label">Jabatan</label>
-
-                            <div class="col-md-6">
-                                <select name="jabatan" id="jabatan" class="form-control">
-                                    <option value="Mahasiswa">Mahasiswa</option>
-                                    <option value="Dosen">Dosen</option>
-                                    <option value="Kalab">Kalab</option>
-                                    <option value="Kajur">Kajur</option>
-                                    <option value="Admin">Admin</option>
-                                </select>
-
-                                @if ($errors->has('jabatan'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('jabatan') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
                         <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
                             <label for="password" class="col-md-4 control-label">Password</label>
 
