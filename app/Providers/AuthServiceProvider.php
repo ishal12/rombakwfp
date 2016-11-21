@@ -25,7 +25,14 @@ class AuthServiceProvider extends ServiceProvider
     public function boot(GateContract $gate)
     {
         $this->registerPolicies($gate);
-
+        $gate->define('ijin-masuk', function($user) {
+            if($user->jabatan=='Admin'){
+                return true;
+            }
+            else{
+                return false;
+            }
+        });
         //
     }
 }
