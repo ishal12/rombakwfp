@@ -5,6 +5,8 @@
 </head>
 <body id="app-layout">
     @include('partials._nav')
+    
+    @include('partials._sidebar')
 
     @yield('content')
 
